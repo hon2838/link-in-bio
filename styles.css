@@ -299,6 +299,30 @@ body.theme-night .bg-overlay { background: rgba(10, 15, 30, 0.5); }
     background: rgba(0, 0, 0, 0.6);
 }
 
+.footer-screen footer {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-separator {
+    opacity: 0.5;
+}
+
+.footer-repo-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.footer-repo-link:hover {
+    color: var(--accent-light);
+    border-bottom-color: var(--accent-light);
+}
+
 @media (max-width: 768px) {
     .giant-text {
         font-size: 18vw;

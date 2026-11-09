@@ -1,0 +1,35 @@
+# ========================================================
+# AI Agent Settings, Local Permissions & Command Approval
+# Prevents leaks like Claude Code settings.local.json, Cursor, Gemini
+# ========================================================
+.claude/
+.gemini/
+.cursor/
+.continue/
+.aider*
+settings.local.json
+*.local.json
+*.local.md
+
+# ========================================================
+# Secrets, Environment & Private Keys
+# ========================================================
+.env
+.env.*
+.env*.local
+!.env.example
+*.pem
+*.key
+*id_rsa*
+*id_ed25519*
+*.p12
+
+# ========================================================
+# OS & Editor Artifacts
+# ========================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~

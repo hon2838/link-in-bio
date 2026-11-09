@@ -4,146 +4,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathew Hon — Infrastructure, Hardware &amp; Systems</title>
-    <meta name="description" content="Personal website of Mathew Hon (Hon Jun Yoon) — exploring the systems behind modern computing, from mission-critical data center infrastructure and PC hardware to Linux, cloud, and software.">
+    <meta name="description" content="Mathew Hon (Hon Jun Yoon) — Exploring the systems behind modern computing. Data Center Operations at NTT Global Data Centers in Malaysia, hardware diagnostics, Linux, and software.">
+
+    <!-- Open Graph / Social Meta -->
     <meta property="og:title" content="Mathew Hon — Infrastructure, Hardware &amp; Systems">
-    <meta property="og:description" content="Exploring the systems behind modern computing. Data center infrastructure, computer hardware, Linux, networking, and software.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hon2838.name.my/">
+    <meta property="og:description" content="Exploring the systems behind modern computing. Data Center Operations at NTT Global Data Centers in Cyberjaya, Malaysia.">
     <meta property="og:image" content="https://hon2838.name.my/profile.jpg">
+    <meta property="og:url" content="https://hon2838.name.my/">
+    <meta property="og:type" content="website">
     <link rel="canonical" href="https://hon2838.name.my/">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css?v=20261022">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body class="theme-day">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-stage" class="skip-link">Skip to main content</a>
 
+    <!-- Cinematic Photographic Atmosphere -->
     <div class="bg-image" aria-hidden="true"></div>
     <div class="bg-overlay" aria-hidden="true"></div>
+    <div class="bg-vignette" aria-hidden="true"></div>
 
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="brand-group">
-                <a href="/" class="brand-link">Mathew Hon</a>
-                <div class="time-badge" id="time-badge" role="button" tabindex="0" title="Local time in Malaysia (click to preview time-of-day themes)" aria-label="Local time in Malaysia. Click to cycle time-of-day visual themes.">
-                    <span class="pulse-dot" aria-hidden="true"></span>
-                    <span id="local-time">MYT (UTC+8)</span>
-                </div>
-            </div>
-            <nav class="site-nav" aria-label="Primary">
-                <a href="/" class="nav-link" aria-current="page">Home</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/projects/" class="nav-link">Projects</a>
-            </nav>
-        </div>
-    </header>
+    <div class="viewport-stage">
+        <main id="main-stage" class="split-stage">
 
-    <main id="main-content" class="container">
-        <section class="hero-section" aria-labelledby="hero-heading">
-            <div class="hero-copy">
-                <div class="eyebrow">
-                    <span class="eyebrow-dot" aria-hidden="true"></span>
-                    <span>Malaysia &middot; Infrastructure, Hardware &amp; Systems</span>
-                </div>
-                <h1 id="hero-heading" class="hero-title">Hey, I'm Mathew.</h1>
-                <p class="hero-subtitle">Exploring the systems behind modern computing.</p>
-                <p class="hero-lead">
-                    I enjoy working across the physical and digital layers of technology&mdash;from assembling and diagnosing bare-metal computer hardware to running Linux, configuring networks, and building practical software tools.
-                </p>
-                <p class="hero-role-note">
-                    Currently working in 24/7 mission-critical facility and infrastructure operations as a <strong>Skilled Data Center Operations Technician at NTT Global Data Centers</strong> in Cyberjaya.
-                </p>
-
-                <div class="hero-actions">
-                    <a href="/about/" class="btn btn-primary">
-                        <span>About &amp; Background</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                    </a>
-                    <a href="/projects/" class="btn btn-secondary">
-                        <span>Selected Projects</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                    </a>
-                </div>
-            </div>
-
-            <figure class="portrait-figure">
-                <div class="portrait-frame">
+            <!-- Left Stage: Personal Identity & Presence -->
+            <section class="stage-left" aria-label="Identity and Introduction">
+                <div class="avatar-frame">
                     <img
-                        src="/profile.jpg?v=2"
-                        alt="Mathew Hon standing on Galata Bridge in Istanbul on a sunny afternoon"
-                        class="portrait-img"
+                        src="profile.jpg?v=2"
+                        alt="Mathew Hon at Galata Bridge in Istanbul"
+                        title="Sunny afternoon in September at Galata Bridge"
+                        class="avatar"
+                        id="profile-img"
                         width="400"
                         height="400"
                         fetchpriority="high"
                     >
                 </div>
-                <figcaption class="portrait-caption">Galata Bridge, Istanbul</figcaption>
-            </figure>
-        </section>
 
-        <section class="connect-section" aria-labelledby="connect-heading">
-            <div class="section-header-inline">
-                <h2 id="connect-heading" class="section-label">Connect &amp; Direct Channels</h2>
-            </div>
-
-            <div class="connect-grid">
-                <a href="https://www.linkedin.com/in/hon2838/" class="kinetic-link linkedin" target="_blank" rel="noopener noreferrer">
-                    <div class="kinetic-top">
-                        <span class="kinetic-meta">01 / Professional</span>
-                        <svg class="kinetic-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                <div class="identity-header">
+                    <h1 class="name">Mathew Hon</h1>
+                    <div class="caption">
+                        <span>Hon Jun Yoon</span>
+                        <span class="caption-separator" aria-hidden="true">&middot;</span>
+                        <span>Malaysia 🇲🇾</span>
                     </div>
-                    <span class="kinetic-word" data-text="LINKEDIN">LINKEDIN</span>
-                    <span class="kinetic-handle">linkedin.com/in/hon2838</span>
-                </a>
-
-                <a href="https://github.com/hon2838" class="kinetic-link github" target="_blank" rel="noopener noreferrer">
-                    <div class="kinetic-top">
-                        <span class="kinetic-meta">02 / Code &amp; Experiments</span>
-                        <svg class="kinetic-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </div>
-                    <span class="kinetic-word" data-text="GITHUB">GITHUB</span>
-                    <span class="kinetic-handle">github.com/hon2838</span>
-                </a>
-
-                <a href="mailto:honjy@hon2838.name.my" class="kinetic-link email">
-                    <div class="kinetic-top">
-                        <span class="kinetic-meta">03 / Direct Inbox</span>
-                        <svg class="kinetic-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    </div>
-                    <span class="kinetic-word" data-text="EMAIL">EMAIL</span>
-                    <span class="kinetic-handle">honjy@hon2838.name.my</span>
-                </a>
-            </div>
-
-            <div class="secondary-socials">
-                <span>Elsewhere on socials</span>
-                <div class="secondary-links-list">
-                    <a href="https://www.facebook.com/mathewhon2838" class="secondary-social-link" target="_blank" rel="noopener noreferrer">
-                        <span>Facebook</span>
-                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
-                    <a href="https://www.instagram.com/hon2838/" class="secondary-social-link" target="_blank" rel="noopener noreferrer">
-                        <span>Instagram</span>
-                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div>&copy; 2026 Mathew Hon (Hon Jun Yoon) &middot; Malaysia</div>
-            <div class="footer-links">
-                <a href="/about/" class="footer-link">About</a>
-                <a href="/projects/" class="footer-link">Projects</a>
-                <a href="https://github.com/hon2838/link-in-bio" target="_blank" rel="noopener noreferrer" class="footer-link">Source</a>
-            </div>
-        </div>
-    </footer>
+                <div class="bio-content">
+                    <p class="bio-lead">
+                        Exploring the systems behind modern computing&mdash;from mission-critical facility infrastructure to bare-metal PC hardware, Linux, and software.
+                    </p>
+                    <p class="bio-sub">
+                        Currently in 24/7 Data Center Operations at <span class="highlight-entity">NTT Global Data Centers</span> in Cyberjaya, and building &amp; troubleshooting computers since 2016.
+                    </p>
+                </div>
 
-    <script src="/script.js?v=20261022" defer></script>
+                <div class="presence-bar">
+                    <button
+                        type="button"
+                        class="time-badge"
+                        id="time-badge"
+                        aria-label="Current local time in Malaysia. Click to cycle Morning, Day, Sunset, and Night themes."
+                        title="Click to preview Morning, Day, Sunset &amp; Night themes"
+                    >
+                        <span class="pulse-dot" aria-hidden="true"></span>
+                        <span id="local-time">MYT (UTC+8)</span>
+                        <span class="theme-pill-tag" id="theme-tag">MYT</span>
+                        <svg class="theme-cycle-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Right Stage: Borderless Giant Kinetic Typography Stack -->
+            <section class="stage-right" aria-label="Destinations and Social Channels">
+                <nav class="kinetic-stack" aria-label="Primary links">
+
+                    <!-- 01 LINKEDIN -->
+                    <a href="https://www.linkedin.com/in/hon2838/" class="giant-link linkedin" target="_blank" rel="noopener noreferrer">
+                        <div class="giant-word-wrap">
+                            <span class="giant-num" aria-hidden="true">01</span>
+                            <span class="giant-text" data-text="LINKEDIN">LINKEDIN</span>
+                        </div>
+                        <span class="giant-Connector" aria-hidden="true"></span>
+                        <div class="giant-meta">
+                            <span class="giant-desc">Experience, certifications &amp; background</span>
+                            <svg class="giant-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <!-- 02 GITHUB -->
+                    <a href="https://github.com/hon2838" class="giant-link github" target="_blank" rel="noopener noreferrer">
+                        <div class="giant-word-wrap">
+                            <span class="giant-num" aria-hidden="true">02</span>
+                            <span class="giant-text" data-text="GITHUB">GITHUB</span>
+                        </div>
+                        <span class="giant-Connector" aria-hidden="true"></span>
+                        <div class="giant-meta">
+                            <span class="giant-desc">Projects, scripts &amp; experiments</span>
+                            <svg class="giant-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <!-- 03 EMAIL -->
+                    <a href="mailto:honjy@hon2838.name.my" class="giant-link email">
+                        <div class="giant-word-wrap">
+                            <span class="giant-num" aria-hidden="true">03</span>
+                            <span class="giant-text" data-text="EMAIL">EMAIL</span>
+                        </div>
+                        <span class="giant-Connector" aria-hidden="true"></span>
+                        <div class="giant-meta">
+                            <span class="giant-desc">honjy@hon2838.name.my</span>
+                            <svg class="giant-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <!-- 04 INSTAGRAM -->
+                    <a href="https://www.instagram.com/hon2838/" class="giant-link instagram" target="_blank" rel="noopener noreferrer">
+                        <div class="giant-word-wrap">
+                            <span class="giant-num" aria-hidden="true">04</span>
+                            <span class="giant-text" data-text="INSTAGRAM">INSTAGRAM</span>
+                        </div>
+                        <span class="giant-Connector" aria-hidden="true"></span>
+                        <div class="giant-meta">
+                            <span class="giant-desc">@hon2838</span>
+                            <svg class="giant-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <!-- 05 FACEBOOK -->
+                    <a href="https://www.facebook.com/mathewhon2838" class="giant-link facebook" target="_blank" rel="noopener noreferrer">
+                        <div class="giant-word-wrap">
+                            <span class="giant-num" aria-hidden="true">05</span>
+                            <span class="giant-text" data-text="FACEBOOK">FACEBOOK</span>
+                        </div>
+                        <span class="giant-Connector" aria-hidden="true"></span>
+                        <div class="giant-meta">
+                            <span class="giant-desc">@mathewhon2838</span>
+                            <svg class="giant-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                    </a>
+
+                </nav>
+            </section>
+        </main>
+
+        <!-- Minimal Footer -->
+        <footer class="minimal-footer">
+            <span class="footer-copy">&copy; 2026 Mathew Hon</span>
+            <span class="footer-separator" aria-hidden="true">|</span>
+            <a href="https://github.com/hon2838/link-in-bio" target="_blank" rel="noopener noreferrer" class="footer-link">View Source Code</a>
+        </footer>
+    </div>
+
+    <script>
+        (function () {
+            const THEME_CYCLE = ['auto', 'morning', 'day', 'sunset', 'night'];
+            let currentThemeIndex = 0;
+
+            function getAutoTheme(hour) {
+                if (hour >= 6 && hour < 10) return 'morning';
+                if (hour >= 10 && hour < 17) return 'day';
+                if (hour >= 17 && hour < 20) return 'sunset';
+                return 'night';
+            }
+
+            function updateClockAndTheme() {
+                const now = new Date();
+                const timeOptions = {
+                    timeZone: 'Asia/Kuala_Lumpur',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: true
+                };
+                const timeString = now.toLocaleTimeString('en-US', timeOptions);
+                const hour = parseInt(
+                    now.toLocaleString('en-US', {
+                        timeZone: 'Asia/Kuala_Lumpur',
+                        hour: 'numeric',
+                        hour12: false
+                    }),
+                    10
+                );
+
+                const timeEl = document.getElementById('local-time');
+                const themeTag = document.getElementById('theme-tag');
+                const mode = THEME_CYCLE[currentThemeIndex];
+                const activeTheme = mode === 'auto' ? getAutoTheme(hour) : mode;
+
+                document.body.classList.remove('theme-morning', 'theme-day', 'theme-sunset', 'theme-night');
+                document.body.classList.add('theme-' + activeTheme);
+
+                if (timeEl) {
+                    timeEl.textContent = timeString + ' (MYT)';
+                }
+
+                if (themeTag) {
+                    if (mode === 'auto') {
+                        themeTag.textContent = activeTheme.toUpperCase();
+                    } else {
+                        themeTag.textContent = mode.toUpperCase() + ' PREVIEW';
+                    }
+                }
+            }
+
+            setInterval(updateClockAndTheme, 1000);
+            updateClockAndTheme();
+
+            const timeBadge = document.getElementById('time-badge');
+            if (timeBadge) {
+                timeBadge.addEventListener('click', function () {
+                    currentThemeIndex = (currentThemeIndex + 1) % THEME_CYCLE.length;
+                    updateClockAndTheme();
+                });
+            }
+        })();
+    </script>
 </body>
 </html>

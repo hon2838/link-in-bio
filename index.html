@@ -63,25 +63,15 @@
                         Exploring the systems behind modern computing&mdash;from mission-critical facility infrastructure to bare-metal PC hardware, Linux, and software.
                     </p>
                     <p class="bio-sub">
-                        Currently in 24/7 Data Center Operations at <span class="highlight-entity">NTT Global Data Centers</span> in Cyberjaya, and building &amp; troubleshooting computers since 2016.
+                        Building &amp; troubleshooting computers, Linux systems, and software projects since 2016.
                     </p>
                 </div>
 
                 <div class="presence-bar">
-                    <button
-                        type="button"
-                        class="time-badge"
-                        id="time-badge"
-                        aria-label="Current local time in Malaysia. Click to cycle Morning, Day, Sunset, and Night themes."
-                        title="Click to preview Morning, Day, Sunset &amp; Night themes"
-                    >
+                    <div class="time-badge" id="time-badge">
                         <span class="pulse-dot" aria-hidden="true"></span>
                         <span id="local-time">MYT (UTC+8)</span>
-                        <span class="theme-pill-tag" id="theme-tag">MYT</span>
-                        <svg class="theme-cycle-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
-                        </svg>
-                    </button>
+                    </div>
                 </div>
             </section>
 
@@ -183,16 +173,6 @@
 
     <script>
         (function () {
-            const THEME_CYCLE = ['auto', 'morning', 'day', 'sunset', 'night'];
-            let currentThemeIndex = 0;
-
-            function getAutoTheme(hour) {
-                if (hour >= 6 && hour < 10) return 'morning';
-                if (hour >= 10 && hour < 17) return 'day';
-                if (hour >= 17 && hour < 20) return 'sunset';
-                return 'night';
-            }
-
             function updateClockAndTheme() {
                 const now = new Date();
                 const timeOptions = {
@@ -213,9 +193,11 @@
                 );
 
                 const timeEl = document.getElementById('local-time');
-                const themeTag = document.getElementById('theme-tag');
-                const mode = THEME_CYCLE[currentThemeIndex];
-                const activeTheme = mode === 'auto' ? getAutoTheme(hour) : mode;
+
+                let activeTheme = 'night';
+                if (hour >= 6 && hour < 10) activeTheme = 'morning';
+                else if (hour >= 10 && hour < 17) activeTheme = 'day';
+                else if (hour >= 17 && hour < 20) activeTheme = 'sunset';
 
                 document.body.classList.remove('theme-morning', 'theme-day', 'theme-sunset', 'theme-night');
                 document.body.classList.add('theme-' + activeTheme);
@@ -223,26 +205,10 @@
                 if (timeEl) {
                     timeEl.textContent = timeString + ' (MYT)';
                 }
-
-                if (themeTag) {
-                    if (mode === 'auto') {
-                        themeTag.textContent = activeTheme.toUpperCase();
-                    } else {
-                        themeTag.textContent = mode.toUpperCase() + ' PREVIEW';
-                    }
-                }
             }
 
             setInterval(updateClockAndTheme, 1000);
             updateClockAndTheme();
-
-            const timeBadge = document.getElementById('time-badge');
-            if (timeBadge) {
-                timeBadge.addEventListener('click', function () {
-                    currentThemeIndex = (currentThemeIndex + 1) % THEME_CYCLE.length;
-                    updateClockAndTheme();
-                });
-            }
         })();
     </script>
 </body>
